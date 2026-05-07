@@ -17,10 +17,10 @@ const checkType = (input: number | string) => {
 };
 
 // task 4
-function getProperty<T, K extends keyof T>(obj: T, key: K): T[K] {
+const getProperty = <T, K extends keyof T>(obj: T, key: K): void => {
   const result = obj[key];
   console.log(result);
-}
+};
 
 // task: 5
 interface Book {
@@ -33,12 +33,7 @@ const toggleReadStatus = (book: Book): Book & { isRead: boolean } => {
   //   return { ...book, isRead: true };
   const result = { ...book, isRead: true };
   console.log(result);
-};
-
-const myBook: Book = {
-  title: "TypeScript Guide",
-  author: "Jane Doe",
-  publishedYear: 2024,
+  return result;
 };
 
 // tak: 6
@@ -70,7 +65,7 @@ class Student extends Person {
 
 // Task: 7
 
-function getIntersection(arr1: number[], arr2: number[]): number[] {
+function getIntersection(arr1: number[], arr2: number[]): void {
   const result = arr1.filter((num) => arr2.includes(num));
   console.log(result);
 }

@@ -1,1 +1,1 @@
-Object-Oriented Programming (OOP) principles become essential for keeping logic organized and reducing duplication. TypeScript, with its strong typing and class-based syntax, makes these pillars practical and powerful. Let’s break down how Inheritance, Polymorphism, Abstraction, and Encapsulation help manage complexity.
+Object-Oriented Programming (OOP) principles become essential for keeping logic organized and reducing duplication. TypeScript, with its strong typing and class-based syntax, makes these pillars practical and powerful.
